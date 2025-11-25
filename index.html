@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>weatherForcast</title>
+        <link rel="icon" href="./assets/icons/weather.png">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <script src="./script.js"></script>
+        <div id="navBar">
+            <div class="main">
+                <div id="weather">
+                    <div id="header">
+                        <input type="text" id="userInput" onclick="getData()"
+                            placeholder="Enter the city name" />
+                        <button onclick="getData()">search</button></div>
+                </div>
+                <div id="message"><p id="alert"></p></div>
+
+                <div id="navbarMain">
+                    <div id="navbar">
+
+                        <div id="temperature"><h6>temperature</h6><div
+                                class="loader" id="loader"></div><p
+                                id="temp"></p><img id="icon" src alt />
+                        </div>
+                    </div>
+                    <div id="navbarRight">
+                        <div id="wind"><h6>windSpeed</h6><div class="loader"
+                                id="loader"></div><p id="windSpeed"></p></div>
+                        <div id="humility"><h6>humidity</h6><div class="loader"
+                                id="loader"></div><p id="humidity"></p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
