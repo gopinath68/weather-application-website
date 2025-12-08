@@ -13,7 +13,7 @@ async function getData() {
 
         element.style.display = 'block';
     });
-    let userData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${countryName}&appid=18a7004f566caf56283e52c1835f0e81`);
+    let userData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${countryName}&appid=<apikey>`);
 
     const newData = await userData.json();
 
